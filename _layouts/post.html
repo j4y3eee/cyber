@@ -1,5 +1,24 @@
 ---
 layout: default
 ---
+<div class="container-fluid site-content">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 block block-container post-block" data-spy="scroll" data-target="#markdown-toc"
+            data-offset="15">
 
-{{ content }}
+            <div>
+                {% if page.title %}
+                <h1 class="post-title">[ {{ page.title }} / {{ page.date | date: "%Y.%m.%d" }} ]</h1>
+                {% endif %}
+            </div>
+
+            {{ content }}
+        </div>
+
+        <div class="col-lg-2 block-container d-none d-lg-block d-print-block">
+            <div class="block">
+                {% include toc.html html=content id="markdown-toc" h_max=2 class="list-group.d-none.d-lg-block.d-print-block" anchor_class="list-group-item.list-group-item-action.toc-list-item" %}
+            </div>
+        </div>
+    </div>
+</div>

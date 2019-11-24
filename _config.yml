@@ -1,0 +1,8 @@
+title: Cyber
+
+# Permalink
+# https://jekyllrb.com/docs/permalinks/
+permalink: /:title/
+
+sass:
+  style: compressed
