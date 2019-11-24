@@ -1,0 +1,16 @@
+#site-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#site-title {
+  color: $font-color-light;
+  background-color: $theme-color-black;
+  margin-left: -15px;
+  padding: 0px 15px 0px 15px;
+}
+
+#site-title a {
+  color: $font-color-light;
+  text-decoration: none;
+}

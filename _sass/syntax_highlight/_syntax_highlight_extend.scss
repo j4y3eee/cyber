@@ -1,0 +1,17 @@
+.highlight pre {
+  color: $font-color-light;
+  overflow-x: auto;
+  padding: 25px;
+  line-height: 25px;
+}
+
+blockquote {
+  border-left: 3px solid $theme-color;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+blockquote .highlight pre {
+  background-color: initial;
+  color: $font-color-dark;
+}
