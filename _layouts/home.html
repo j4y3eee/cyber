@@ -4,6 +4,24 @@ layout: default
 <div id="site-content" class="container-fluid">
     <div class="row">
         <div class="col-lg-4 offset-lg-1 block-container block d-none d-lg-block d-print-block">
+            <div>
+                <div>categories</div>
+                <div>
+                    <div>ALL_{{ site.posts.size }}</div>
+                    {% for category in site.categories %}
+                    <div>{{ category[0] | upcase }}_{{ category[1].size }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div>
+                <div>tags</div>
+                <div>
+                    {% for tag in site.tags %}
+                    <span>#{{ tag[0] }}_{{ tag[1].size }}</span>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
 
         <div class="col-lg-6 block-container">
