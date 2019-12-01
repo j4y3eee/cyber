@@ -1,0 +1,33 @@
+<script>
+    var ctx = document.getElementById('category-chart');
+    var categoryChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: [{% for category in site.categories %}'{{ category[0] | upcase }}',{% endfor %}],
+    datasets: [{
+        label: 'Posts',
+        data: [{% for category in site.categories %}'{{ category[1].size }}', {% endfor %}]
+        }],
+        },
+    options: {
+        scale: {
+            ticks: {
+                suggestedMin: 0
+            }
+        },
+        tooltips: {
+            callbacks: {
+                label: function(tooltipItem, data) {
+                    var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                    if (label) {
+                        label += ': ';
+                    }
+                    label += Math.round(tooltipItem.yLabel * 100) / 100;
+                    return label;
+                }
+            }
+        }
+    }
+    });
+</script>

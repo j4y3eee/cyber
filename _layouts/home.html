@@ -4,23 +4,17 @@ layout: default
 <div id="site-content" class="container-fluid">
     <div class="row">
         <div class="col-lg-4 offset-lg-1 block-container block d-none d-lg-block d-print-block">
-            <div>
-                <div>categories</div>
-                <div>
-                    <div>ALL_{{ site.posts.size }}</div>
-                    {% for category in site.categories %}
-                    <div>{{ category[0] | upcase }}_{{ category[1].size }}</div>
-                    {% endfor %}
-                </div>
+            <div id="category-total">ALL_{{ site.posts.size }}</div>
+            <div class="category-chart-block">
+                <canvas id="category-chart" width="400" height="400"></canvas>
             </div>
 
-            <div>
-                <div>tags</div>
-                <div>
-                    {% for tag in site.tags %}
-                    <span>#{{ tag[0] }}_{{ tag[1].size }}</span>
-                    {% endfor %}
-                </div>
+            <div id="tags-block">
+                {% for tag in site.tags %}
+                <span>
+                    <spna class="tags-symbol">#</spna>{{ tag[0] }}_{{ tag[1].size }}
+                </span>
+                {% endfor %}
             </div>
         </div>
 
@@ -54,3 +48,5 @@ layout: default
         </div>
     </div>
 </div>
+
+{% include category_chart.html %}

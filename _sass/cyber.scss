@@ -8,7 +8,8 @@ $theme-color-white: whitesmoke;
 $font-color: dimgray;
 $font-color-dark: $theme-color-black;
 $font-color-light: gainsboro;
-$font-family: "Noto Sans TC", sans-serif;
+$font-family: "Noto Sans TC",
+sans-serif;
 
-@import "cyber/base", "cyber/footer", "cyber/header", "cyber/layout", "cyber/post", "cyber/markdown_toc",
-  "syntax_highlight/monokai", "syntax_highlight/syntax_highlight_extend";
+@import "cyber/base", "cyber/footer", "cyber/header", "cyber/layout", "cyber/home", "cyber/post", "cyber/markdown_toc",
+"syntax_highlight/monokai", "syntax_highlight/syntax_highlight_extend";
