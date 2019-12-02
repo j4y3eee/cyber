@@ -4,15 +4,16 @@ layout: default
 <div id="site-content" class="container-fluid">
     <div class="row">
         <div class="col-lg-4 offset-lg-1 block-container block d-none d-lg-block d-print-block">
-            <div id="category-total">ALL_{{ site.posts.size }}</div>
+            <div id="category-total">ALL _ {{ site.posts.size }}</div>
             <div class="category-chart-block">
                 <canvas id="category-chart" width="400" height="400"></canvas>
             </div>
 
             <div id="tags-block">
                 {% for tag in site.tags %}
-                <span>
-                    <spna class="tags-symbol">#</spna>{{ tag[0] }}_{{ tag[1].size }}
+                <span class="tags-element">
+                    <spna class="tags-symbol">#</spna>
+                    <span><a href="#">{{ tag[0] }}</a><sup>{{ tag[1].size }}</sup></span>
                 </span>
                 {% endfor %}
             </div>
