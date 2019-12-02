@@ -6,13 +6,15 @@
             labels: [{% for category in site.categories %}'{{ category[0] | upcase }}',{% endfor %}],
     datasets: [{
         label: 'Posts',
-        data: [{% for category in site.categories %}'{{ category[1].size }}', {% endfor %}]
-        }],
+        data: [{% for category in site.categories %}'{{ category[1].size }}', {% endfor %}],
+        backgroundColor: "rgba(00, 206, 209, 0.5)"
+        }]
         },
     options: {
         scale: {
             ticks: {
-                suggestedMin: 0
+                beginAtZero: true,
+                    precision: 0
             }
         },
         tooltips: {
