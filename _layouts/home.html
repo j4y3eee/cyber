@@ -8,15 +8,6 @@ layout: default
             <div class="category-chart-block">
                 <canvas id="category-chart" width="400" height="400"></canvas>
             </div>
-
-            <div id="tags-block">
-                {% for tag in site.tags %}
-                <span class="tags-element">
-                    <spna class="tags-symbol">#</spna>
-                    <span><a href="#">{{ tag[0] }}</a><sup>{{ tag[1].size }}</sup></span>
-                </span>
-                {% endfor %}
-            </div>
         </div>
 
         <div class="col-lg-6 block-container">
