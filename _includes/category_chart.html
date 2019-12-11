@@ -21,14 +21,29 @@
         datasets: [{
             label: 'Posts',
             data: [{{ categories_counts }}],
-        backgroundColor: "rgba(00, 206, 209, 0.5)"
+        backgroundColor: "rgba(00, 206, 209, 0.5)",
+        fontColor: 'gainsboro'
     }]
         },
     options: {
+        legend: {
+            display: false
+        },
         scale: {
             ticks: {
                 beginAtZero: true,
-                    precision: 0
+                    precision: 0,
+                        backdropColor: 'rgba(255, 255, 255, 0)',
+                            fontColor: 'gainsboro'
+            },
+            gridLines: {
+                color: 'gainsboro'
+            },
+            angleLines: {
+                color: 'gainsboro'
+            },
+            pointLabels: {
+                fontColor: 'gainsboro'
             }
         },
         tooltips: {
