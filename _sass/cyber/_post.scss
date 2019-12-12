@@ -1,3 +1,12 @@
+#post-header {
+  margin-bottom: 15px;
+}
+
+#post-header-category-tag {
+  text-align: right;
+  font-size: 12px;
+}
+
 .post-title {
   font-weight: bold;
 }
@@ -11,14 +20,12 @@
   background-color: $theme-color;
   border: 1px solid $theme-color-black;
   color: $theme-color-black;
-  margin-bottom: 45px;
 }
 
 .post-block h2 {
-  margin-top: 25px;
+  margin-top: 65px;
   background-color: $theme-color-gray;
   color: $theme-color-black;
-  // border: 1px solid $theme-color-black;
 
   display: inline-block;
 
