@@ -1,6 +1,10 @@
+#category-chart-container {
+  background-color: $theme-color-black;
+}
+
 #category-total {
-  background-color: $theme-color-white;
-  color: $font-color-dark;
+  color: $font-color-light;
+  margin: 15px 0px 15px 0px;
   text-align: right;
 }
 
