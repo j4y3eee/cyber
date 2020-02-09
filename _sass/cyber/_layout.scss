@@ -1,6 +1,7 @@
 // Block
 .block-container {
-  height: 90vh;
+  height: 70vh;
+  height: calc(100vh - 198px);
   overflow-x: hidden;
 }
 
@@ -10,6 +11,7 @@
   border-left: 5px solid $theme-color-black;
   color: $theme-color-black;
   padding: 25px;
+  height: 100%;
 }
 
 .block.block-hover:hover {
@@ -21,6 +23,17 @@
 // Post list
 .post-list-item {
   margin-bottom: 15px;
+}
+
+.post-list-item-category {
+  color: $font-color;
+  background-color: $theme-color-gray;
+  padding: 0px 5px 0px 5px;
+}
+
+.block.block-hover:hover .post-list-item-category {
+  color: $font-color-dark;
+  background-color: transparent;
 }
 
 .post-list-item-title {
