@@ -12,6 +12,7 @@ a:hover {
 
 // Scrollbar
 ::-webkit-scrollbar {
+  height: 7px;
   width: 7px;
 }
 
@@ -23,4 +24,5 @@ a:hover {
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
   background: $theme-color-black;
+  border: 1px solid $font-color;
 }
