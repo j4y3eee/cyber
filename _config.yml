@@ -1,11 +1,20 @@
+# Site
 title: Cyber
 description: Hello World
 
-#github_url: https://github.com/[username]
+# Github
+# github:
+  # url: https://github.com/[username]
 
 # Permalink
 # https://jekyllrb.com/docs/permalinks/
 permalink: /:title/
 
+# Google services
+# google_analytics: [Tracking ID] 
+
 sass:
   style: compressed
+
+plugins:
+  - jekyll-seo-tag
