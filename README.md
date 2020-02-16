@@ -65,4 +65,4 @@ Github Pages : Dependency versions - <https://pages.github.com/versions/>
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [MIT License](/LICENSE.txt).
