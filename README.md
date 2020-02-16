@@ -2,6 +2,8 @@
 
 Jekyll theme for Github Pages
 
+[Demo]( https://jayeeeeee.github.io/ )
+
 ## Features
 
 1. ScrollSpy
