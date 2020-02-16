@@ -1,20 +1,18 @@
 # Site
 title: Cyber
 description: Hello World
+url: "" # the base hostname & protocol for your site, e.g. https://[username].github.io/
 
 # Github
-# github:
-  # url: https://github.com/[username]
+github:
+  url: "" # e.g. https://github.com/[username]
 
 # Permalink
 # https://jekyllrb.com/docs/permalinks/
 permalink: /:title/
 
 # Google services
-# google_analytics: [Tracking ID] 
+google_analytics: "" # e.g. UA-000000-2 
 
 sass:
   style: compressed
-
-plugins:
-  - jekyll-seo-tag

@@ -1,52 +1,68 @@
 # cyber
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Jekyll theme for Github Pages
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+## Features
 
-TODO: Delete this and the text above, and describe your gem
-
+1. ScrollSpy
+2. Summary Chart
+3. Google Analytic
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "cyber"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: cyber
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install cyber
+**Copy and Paste** to your Github Pages `root` folder
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Run locally
 
-## Contributing
+```shell
+$ bundle exec jekyll serve
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Known Issue
 
-## Development
+```shell
+Conversion error: Jekyll::Converters::Scss encountered an error while converting 'assets/css/style.scss':
+                  Invalid CP950 character "\xE2" on line 5
+           Error: Invalid CP950 character "\xE2" on line 5
+```
 
-To set up your environment to develop this theme, run `bundle install`.
+-> add new file `assets/css/style.scss`:
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+```text
+---
+---
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `cyber.gemspec` accordingly.
+@charset "UTF-8";
+```
+
+### Configuration
+
+`_config.yml`
+
+- title
+- description
+- url
+- google_analytics
+
+### Logo
+
+Replace `/assets/logo.png`
+
+## Dependencies
+
+- Bootstrap - <https://getbootstrap.com/>
+- jekyll-toc - <https://github.com/allejo/jekyll-toc>
+- Google Fonts - <https://fonts.google.com/>
+- Chart.js - <https://www.chartjs.org/>
+
+## Reference
+
+Jekyll Theme - <https://jekyllrb.com/docs/themes/#creating-a-gem-based-theme>
+
+Github Pages : Dependency versions - <https://pages.github.com/versions/>
 
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
